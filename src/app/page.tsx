@@ -1,10 +1,16 @@
-import Navbar from "@/_components/navbar";
+import Connect from "@/_components/layout/connect";
+import HeroSection from "@/_components/layout/hero-section";
+import Navbar from "@/_components/layout/navbar";
+import Projects from "@/_components/layout/projects";
 
 export default function Home() {
   return (
-    <main className="min-h-dvh flex overflow-y-auto justify-center ">
-      <div className="max-w-2xl w-full sm:border-x border-[#222222] sm:mx-8 flex flex-col min-h-dvh">
+    <main className="min-h-dvh flex justify-center ">
+      <div className="max-w-2xl w-full sm:border-x border-border sm:mx-8 flex flex-col min-h-dvh">
         <Navbar />
+        <HeroSection />
+        <Projects />
+        <Connect />
       </div>
     </main>
   );

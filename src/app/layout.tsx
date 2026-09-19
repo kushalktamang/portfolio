@@ -1,9 +1,15 @@
 import type { Metadata } from "next";
-import { Victor_Mono } from "next/font/google";
+import { Geist_Pixel, Victor_Mono } from "next/font/google";
 import "@/_css/globals.css";
 
 const victorMono = Victor_Mono({
   variable: "--font-victor-mono",
+});
+
+const geistPixel = Geist_Pixel({
+  variable: "--font-geist-pixel",
+  subsets: ["latin"],
+  fallback: ["ui-monospace", "monospace"],
 });
 
 export const metadata: Metadata = {
@@ -16,7 +22,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${victorMono.variable} h-full antialiased`}
+      className={`${victorMono.variable} ${geistPixel.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
