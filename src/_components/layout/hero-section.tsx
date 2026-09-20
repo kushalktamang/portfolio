@@ -1,37 +1,69 @@
 import Image from "next/image";
-import SocialLinks from "../ui/social-links";
+import { Stack } from "./stack";
+// import SocialLinks from "../ui/social-links";
 
 function HeroSection() {
   return (
     <section className="flex flex-col justify-start p-5 border-b border-border font-victor-mono">
-      <div>
-        <h1 className="font-geist-pixel text-5xl mb-2 text-[#EDEDED]">
-          Kushal Tamang.
-        </h1>
-        <p className="text-[1rem] text-[#9A9A9A]">Full-stack Engineer.Some people know me as moks.</p>
-      </div>
-      <div className="mt-5">
-        <div className="flex text-xl">
-          <a
-            href="https://go.dev/"
-            className="hover:text-dark-cyan flex items-center mr-2"
-          >
-            <Image
-              src="/go.svg"
-              alt="go"
-              width={10}
-              height={10}
-              className="h-5 w-auto"
-            />{" "}
-            Go Programming Language
-          </a>{" "}
-          <span className="text-rose-pine">enthusiast.</span>
+      <div className="flex items-start gap-6 mb-5 p-5">
+        <div className="group relative aspect-square w-42 shrink-0">
+          {/* back border: offset, moves on hover */}
+          <div className="absolute inset-0 translate-x-2 translate-y-2 border border-border opacity-70 transition duration-700 group-hover:translate-x-4 group-hover:translate-y-4 group-hover:opacity-40" />
+
+          {/* front border: holds the image, stays put */}
+          <div className="border-border bg-[#0A0A0A] p-1 absolute top-0 left-0 h-full w-full border">
+            <div className="relative size-full overflow-hidden border border-border">
+              <Image
+                src="/animeProfile.svg"
+                alt="kushal"
+                width={168}
+                height={168}
+                loading="lazy"
+                className="size-full object-cover object-top"
+              />
+            </div>
+          </div>
         </div>
-        <p className="text-xl mt-1">Currently learning Effects.</p>
+        <div className="flex flex-col">
+          <div className="flex items-center gap-2 pt-4">
+            <h1 className="text-sm text-[#EDEDED] font-bold ml-1">
+              Hi, I'm Kushal.
+            </h1>
+          </div>
+          <p className="font-geist-pixel text-7xl text-[#9A9A9A]">
+            Full-stack
+            <br /> Engineer
+          </p>
+        </div>
+      </div>
+
+      <div className="border-t border-border gap-3 flex flex-col justify-between flex-1 h-full max-h-125 mt-5 p-5">
+        <div className="flex flex-col">
+          <span>
+            My main stack is <Stack name="Nextjs" /> in the frontend and{" "}
+            <Stack name="Honojs" /> in the backend using <Stack name="Typescript" />, with{" "}
+            <Stack name="Postgres" /> || <Stack name="Mongodb" /> as my
+            database, using <Stack name="Drizzle" /> ||{" "}
+            <Stack name="Mongoose" /> for the ORM.
+          </span>
+        </div>
+        <div className="flex flex-col">
+          <span>
+            I also use <Stack name="Framer" /> for animations,{" "}
+            <Stack name="Vitest" /> for testing and for deployment, I use{" "}
+            <Stack name="Vercel" /> and{" "}<Stack name="Render" />
+          </span>
+        </div>
+        <div className="flex flex-col">
+          <span>
+            I am currently learning <Stack name="Go" /> and{" "}
+            <Stack name="Threejs" />.
+          </span>
+        </div>
       </div>
 
       {/*------------------------ my social links -----------------------*/}
-      <SocialLinks />
+      {/*<SocialLinks />*/}
     </section>
   );
 }
