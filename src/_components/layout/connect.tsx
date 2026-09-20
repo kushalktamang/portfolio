@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedinIn, FaX } from "react-icons/fa6";
 
 function Connect() {
   return (
-    <div className="border-b border-border font-victor-mono">
+    <div className="border-y border-border font-victor-mono mb-7">
       <h1 className="font-geist-pixel p-3 text-2xl text-dark-cyan">Connect</h1>
       <div className=" border-t border-border text-start p-5">
         <h2>

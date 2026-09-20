@@ -2,6 +2,7 @@ import Connect from "@/_components/layout/connect";
 import HeroSection from "@/_components/layout/hero-section";
 import Navbar from "@/_components/layout/navbar";
 import Projects from "@/_components/layout/projects";
+import Skills from "@/_components/layout/skills";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         <Navbar />
         <HeroSection />
         <Projects />
+        <Skills />
         <Connect />
       </div>
     </main>

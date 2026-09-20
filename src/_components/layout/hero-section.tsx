@@ -5,10 +5,10 @@ function HeroSection() {
   return (
     <section className="flex flex-col justify-start p-5 border-b border-border font-victor-mono">
       <div>
-        <h1 className="font-geist-pixel text-3xl text-dark-cyan">
+        <h1 className="font-geist-pixel text-5xl mb-2 text-[#EDEDED]">
           Kushal Tamang.
         </h1>
-        <p className="text-rose-pine">Software Engineer</p>
+        <p className="text-[1rem] text-[#9A9A9A]">Full-stack Engineer.Some people know me as moks.</p>
       </div>
       <div className="mt-5">
         <div className="flex text-xl">
