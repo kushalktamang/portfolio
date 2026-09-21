@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Stack } from "./stack";
+import { Stack } from "../ui/stack";
 // import SocialLinks from "../ui/social-links";
 
 function HeroSection() {
@@ -30,28 +30,27 @@ function HeroSection() {
               Hi, I'm Kushal.
             </h1>
           </div>
-          <p className="font-geist-pixel text-7xl text-[#9A9A9A]">
-            Full-stack
-            <br /> Engineer
-          </p>
+          <div className="font-geist-pixel text-7xl text-[#9A9A9A]">
+            <span className="text-6xl">Full-stack</span>
+            <br /><span>Developer</span>
+          </div>
         </div>
       </div>
 
       <div className="border-t border-border gap-3 flex flex-col justify-between flex-1 h-full max-h-125 mt-5 p-5">
         <div className="flex flex-col">
           <span>
-            My main stack is <Stack name="Nextjs" /> in the frontend and{" "}
-            <Stack name="Honojs" /> in the backend using <Stack name="Typescript" />, with{" "}
-            <Stack name="Postgres" /> || <Stack name="Mongodb" /> as my
-            database, using <Stack name="Drizzle" /> ||{" "}
-            <Stack name="Mongoose" /> for the ORM.
+            My current main stack is <Stack name="Nextjs" /> &{" "}
+            <Stack name="Honojs" /> with <Stack name="Typescript" />, and{" "}
+            <Stack name="Postgres" /> with <Stack name="Drizzle" /> ORM for my
+            database.
           </span>
         </div>
         <div className="flex flex-col">
           <span>
             I also use <Stack name="Framer" /> for animations,{" "}
             <Stack name="Vitest" /> for testing and for deployment, I use{" "}
-            <Stack name="Vercel" /> and{" "}<Stack name="Render" />
+            <Stack name="Vercel" /> and <Stack name="Render" />
           </span>
         </div>
         <div className="flex flex-col">
