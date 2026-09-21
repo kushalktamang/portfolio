@@ -70,7 +70,7 @@ export function Stack({ name }: { name: StackName }) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="group inline-flex items-center gap-1.5 border border-border border-dashed p-1 transition-all duration-200 hover:-translate-y-0.5 hover:border-solid hover:bg-muted motion-reduce:transition-none motion-reduce:hover:translate-y-0 hover:bg-border mt-1.5"
+      className="group inline-flex items-center gap-1.5 border border-border border-dashed p-1 transition-all duration-200 hover:-translate-y-0.5 hover:border-solid hover:bg-muted motion-reduce:transition-none motion-reduce:hover:translate-y-0 hover:bg-border mt-1.5 font-geist-pixel"
     >
       <Icon
         aria-hidden

@@ -1,10 +1,9 @@
 import Image from "next/image";
 import { Stack } from "../ui/stack";
-// import SocialLinks from "../ui/social-links";
 
 function HeroSection() {
   return (
-    <section className="flex flex-col justify-start p-5 border-b border-border font-victor-mono">
+    <section className="flex flex-col justify-start p-5 border-y mt-7 border-dashed border-border font-victor-mono">
       <div className="flex items-start gap-6 mb-5 p-5">
         <div className="group relative aspect-square w-42 shrink-0">
           {/* back border: offset, moves on hover */}
@@ -32,7 +31,8 @@ function HeroSection() {
           </div>
           <div className="font-geist-pixel text-7xl text-dark-cyan">
             <span className="text-6xl">Full-stack</span>
-            <br /><span>Developer</span>
+            <br />
+            <span>Developer</span>
           </div>
         </div>
       </div>
@@ -60,9 +60,6 @@ function HeroSection() {
           </span>
         </div>
       </div>
-
-      {/*------------------------ my social links -----------------------*/}
-      {/*<SocialLinks />*/}
     </section>
   );
 }

@@ -4,6 +4,8 @@ import "@/_css/globals.css";
 
 const victorMono = Victor_Mono({
   variable: "--font-victor-mono",
+  subsets: ["latin"],
+  fallback: ["ui-monospace", "monospace"],
 });
 
 const geistPixel = Geist_Pixel({
