@@ -26,11 +26,11 @@ function HeroSection() {
         </div>
         <div className="flex flex-col">
           <div className="flex items-center gap-2 pt-4">
-            <h1 className="text-sm text-[#EDEDED] font-bold ml-1">
+            <h1 className="text-sm text-rose-pine font-bold ml-1">
               Hi, I'm Kushal.
             </h1>
           </div>
-          <div className="font-geist-pixel text-7xl text-[#9A9A9A]">
+          <div className="font-geist-pixel text-7xl text-dark-cyan">
             <span className="text-6xl">Full-stack</span>
             <br /><span>Developer</span>
           </div>
