@@ -29,7 +29,7 @@ import { TbBrandFramerMotion, TbBrandThreejs } from "react-icons/tb";
 const STACK = {
   Nextjs: { icon: SiNextdotjs, href: "https://nextjs.org" },
   Vite: { icon: SiVite, href: "https://vite.com" },
-  Honojs: { icon: SiHono, href: "https://hono.dev" },
+  Hono: { icon: SiHono, href: "https://hono.dev" },
   Expressjs: { icon: SiExpress, href: "https://expressjs.com" },
   Postgres: { icon: SiPostgresql, href: "https://www.postgresql.org" },
   Mongodb: { icon: SiMongodb, href: "https://www.mongodb.com" },
@@ -43,26 +43,21 @@ const STACK = {
   Threejs: { icon: TbBrandThreejs, href: "https://threejs.org" },
   Render: { icon: SiRender, href: "https://render.com" },
   Vitest: { icon: SiVitest, href: "https://vitest.dev" },
-  Typescript: { icon: SiTypescript, href: "https://typescript.com" },
-  Nodejs: { icon: FaNodeJs, href: "" },
-  Bun: { icon: SiBun, href: "" },
-  Tailwind: { icon: SiTailwindcss, href: "" },
-  Docker: { icon: SiDocker, href: "" },
+  Typescript: { icon: SiTypescript, href: "https://www.typescriptlang.org" },
+  Nodejs: { icon: FaNodeJs, href: "https://beta.docs.nodejs.org" },
+  Bun: { icon: SiBun, href: "https://bun.com" },
+  Tailwind: { icon: SiTailwindcss, href: "https://tailwindcss.com" },
+  Docker: { icon: SiDocker, href: "https://www.docker.com" },
   Linux: { icon: SiLinux, href: "" },
-  Github: { icon: SiGithub, href: "" },
-  Zed: { icon: SiZedindustries, href: "" },
-  Bruno: { icon: SiBruno, href: "" },
-  Neon: { icon: SiNeon, href: "" },
-  
+  Github: { icon: SiGithub, href: "https://github.com/kushalktamang" },
+  Zed: { icon: SiZedindustries, href: "https://zed.dev" },
+  Bruno: { icon: SiBruno, href: "https://www.usebruno.com" },
+  Neon: { icon: SiNeon, href: "https://neon.com" },
 } satisfies Record<string, { icon: IconType; href: string }>;
 
-export type StackName = keyof typeof STACK;
+type StackName = keyof typeof STACK;
 
-type StackProps = {
-  name: StackName;
-};
-
-export function Stack({ name }: { name: StackName }) {
+const Stack = ({ name }: { name: StackName }) => {
   const { icon: Icon, href } = STACK[name];
 
   return (
@@ -79,4 +74,6 @@ export function Stack({ name }: { name: StackName }) {
       {name}
     </a>
   );
-}
+};
+
+export default Stack;

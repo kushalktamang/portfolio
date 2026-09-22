@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #000000;
+  --foreground: #ffffff;
   --custom-pink: #eb6f92;
   --custom-red: #ea6962;
   --custom-blue: #7daea3;
@@ -22,15 +22,16 @@
   --color-hover: var(--custom-hover);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #000;
-    --foreground: #ededed;
-  }
-}
 
 body {
-  background: var(--background);
+  background: var(--color-background);
   color: var(--foreground);
   font-family: var(--font-victor-mono);
+}
+
+@utility no-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  &::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
 }

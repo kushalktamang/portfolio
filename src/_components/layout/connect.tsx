@@ -1,14 +1,13 @@
 import { FaGithub, FaLinkedinIn, FaX } from "react-icons/fa6";
 
-function Connect() {
+const Connect = () => {
   return (
     <div className="border-y border-border border-dashed font-victor-mono mb-7 p-5">
       <h1 className="font-geist-pixel p-3 text-2xl text-dark-cyan">Connect</h1>
       <div className=" border-t border-border text-start p-5">
         <h2>
-          Reach me at{" "}
-          <strong className="text-rose-pine">kushalktamang@gmail.com</strong> or
-          connect on social media below.
+          Reach me at <strong className="text-rose-pine">kushalktamang@gmail.com</strong> or connect
+          on social media below.
         </h2>
       </div>
       {/*------------links social---------------*/}
@@ -55,6 +54,6 @@ function Connect() {
       </div>
     </div>
   );
-}
+};
 
 export default Connect;

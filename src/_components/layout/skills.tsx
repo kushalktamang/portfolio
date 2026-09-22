@@ -1,6 +1,6 @@
-import { Stack } from "../ui/stack";
+import Stack from "../ui/stack";
 
-function Skills() {
+const Skills = () => {
   return (
     <section className="p-5">
       <h1 className="font-geist-pixel p-3 text-2xl text-dark-cyan border-b border-border">
@@ -35,6 +35,9 @@ function Skills() {
           </span>
           <span>
             <Stack name="Bun" />
+          </span>
+          <span>
+            <Stack name="Hono" />
           </span>
         </dd>
         <dt>Database</dt>
@@ -86,6 +89,6 @@ function Skills() {
       </dl>
     </section>
   );
-}
+};
 
 export default Skills;

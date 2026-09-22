@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { Stack } from "../ui/stack";
+import Stack from "../ui/stack";
 
-function HeroSection() {
+const HeroSection = () => {
   return (
     <section className="flex flex-col justify-start p-5 border-y mt-7 border-dashed border-border font-victor-mono">
       <div className="flex items-start gap-6 mb-5 p-5">
@@ -25,9 +25,7 @@ function HeroSection() {
         </div>
         <div className="flex flex-col">
           <div className="flex items-center gap-2 pt-4">
-            <h1 className="text-sm text-rose-pine font-bold ml-1">
-              Hi, I'm Kushal.
-            </h1>
+            <h1 className="text-sm text-rose-pine font-bold ml-1">Hi, I'm Kushal.</h1>
           </div>
           <div className="font-geist-pixel text-7xl text-dark-cyan">
             <span className="text-6xl">Full-stack</span>
@@ -40,28 +38,25 @@ function HeroSection() {
       <div className="border-t border-border gap-3 flex flex-col justify-between flex-1 h-full max-h-125 mt-5 p-5">
         <div className="flex flex-col">
           <span>
-            My current main stack is <Stack name="Nextjs" /> &{" "}
-            <Stack name="Honojs" /> with <Stack name="Typescript" />, and{" "}
-            <Stack name="Postgres" /> with <Stack name="Drizzle" /> ORM for my
-            database.
+            My current main stack is <Stack name="Nextjs" /> & <Stack name="Hono" /> with{" "}
+            <Stack name="Typescript" /> and <Stack name="Postgres" /> with <Stack name="Drizzle" />{" "}
+            ORM for my database.
           </span>
         </div>
         <div className="flex flex-col">
           <span>
-            I also use <Stack name="Framer" /> for animations,{" "}
-            <Stack name="Vitest" /> for testing and for deployment, I use{" "}
-            <Stack name="Vercel" /> and <Stack name="Render" />
+            I also use <Stack name="Framer" /> for animations, <Stack name="Vitest" /> for testing
+            and for deployment, I use <Stack name="Vercel" /> and <Stack name="Render" />
           </span>
         </div>
         <div className="flex flex-col">
           <span>
-            I am currently learning <Stack name="Go" /> and{" "}
-            <Stack name="Threejs" />.
+            I am currently learning <Stack name="Go" /> and <Stack name="Threejs" />.
           </span>
         </div>
       </div>
     </section>
   );
-}
+};
 
 export default HeroSection;
