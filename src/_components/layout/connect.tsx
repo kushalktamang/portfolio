@@ -2,21 +2,22 @@ import { FaGithub, FaLinkedinIn, FaX } from "react-icons/fa6";
 
 const Connect = () => {
   return (
-    <div className="border-y border-border border-dashed font-victor-mono mb-7 p-5">
-      <h1 className="font-geist-pixel p-3 text-2xl text-dark-cyan">Connect</h1>
-      <div className=" border-t border-border text-start p-5">
-        <h2>
-          Reach me at <strong className="text-rose-pine">kushalktamang@gmail.com</strong> or connect
-          on social media below.
+    <div className="mb-0 border-y border-dashed border-border p-3 font-victor-mono sm:mb-7 sm:p-5">
+      <h1 className="p-3 font-geist-pixel text-2xl text-dark-cyan">Connect</h1>
+      <div className="border-t border-border p-3 text-start sm:p-5">
+        <h2 className="text-sm leading-relaxed sm:text-base">
+          Reach me at <strong className="break-all text-rose-pine">kushalktamang@gmail.com</strong>{" "}
+          or connect on social media below.
         </h2>
       </div>
       {/*------------links social---------------*/}
-      <div className="flex justify-evenly items-center border border-border">
+      <div className="flex flex-wrap items-center justify-center border border-border">
         {/*----------------linkedin-------------------------*/}
-        <div>
+        <div className="min-w-25 flex-1">
           <a
             href="https://www.linkedin.com/in/kushalktamang/"
-            className="cursor text-sm group p-3 flex gap-2 items-center"
+            rel="noopener noreferrer"
+            className="group flex cursor items-center justify-center gap-2 p-2 text-sm sm:p-3"
             target="_blank"
           >
             <span className="transition-transform duration-200 group-hover:scale-110 flex items-center gap-1">
@@ -26,10 +27,11 @@ const Connect = () => {
           </a>
         </div>
         {/*------------------------x------------------------*/}
-        <div>
+        <div className="min-w-25 flex-1">
           <a
             href="https://x.com/kushalktamang"
-            className="cursor text-sm group p-3 flex gap-2 items-center"
+            rel="noopener noreferrer"
+            className="group flex cursor items-center justify-center gap-2 p-2 text-sm sm:p-3"
             target="_blank"
           >
             <span className="transition-transform duration-200 group-hover:scale-110 flex items-center gap-1">
@@ -39,10 +41,11 @@ const Connect = () => {
           </a>
         </div>
         {/*-----------------github----------------*/}
-        <div>
+        <div className="min-w-25 flex-1">
           <a
             href="https://github.com/kushalktamang"
-            className="cursor text-sm group p-3 flex gap-2 items-center"
+            rel="noopener noreferrer"
+            className="group flex cursor items-center justify-center gap-2 p-2 text-sm sm:p-3"
             target="_blank"
           >
             <span className="transition-transform duration-200 group-hover:scale-110 flex items-center gap-1">

@@ -2,13 +2,13 @@ import Stack from "../ui/stack";
 
 const Skills = () => {
   return (
-    <section className="p-5">
-      <h1 className="font-geist-pixel p-3 text-2xl text-dark-cyan border-b border-border">
+    <section className="p-3 sm:p-5">
+      <h1 className="border-b border-border p-3 font-geist-pixel text-2xl text-dark-cyan">
         Skills
       </h1>
-      <dl className="grid grid-cols-[max-content_1fr] gap-x-10 gap-y-[1.05rem] items-baseline p-5">
-        <dt>Languages</dt>
-        <dd className="flex gap-2">
+      <dl className="grid grid-cols-1 items-baseline gap-y-4 p-3 sm:grid-cols-[max-content_1fr] sm:gap-x-10 sm:gap-y-[1.05rem] sm:p-5">
+        <dt className="text-rose-pine">Languages</dt>
+        <dd className="flex min-w-0 flex-wrap gap-1.5">
           <span>
             <Stack name="Typescript" />
           </span>
@@ -16,8 +16,8 @@ const Skills = () => {
             <Stack name="Go" />
           </span>
         </dd>
-        <dt>FrontEnd</dt>
-        <dd className="flex gap-2">
+        <dt className="text-rose-pine">FrontEnd</dt>
+        <dd className="flex min-w-0 flex-wrap gap-1.5">
           <span>
             <Stack name="Nextjs" />
           </span>
@@ -28,8 +28,8 @@ const Skills = () => {
             <Stack name="Framer" />
           </span>
         </dd>
-        <dt>Backend</dt>
-        <dd className="flex gap-2">
+        <dt className="text-rose-pine">Backend</dt>
+        <dd className="flex min-w-0 flex-wrap gap-1.5">
           <span>
             <Stack name="Nodejs" />
           </span>
@@ -40,9 +40,9 @@ const Skills = () => {
             <Stack name="Hono" />
           </span>
         </dd>
-        <dt>Database</dt>
+        <dt className="text-rose-pine">Database</dt>
 
-        <dd className="flex gap-2">
+        <dd className="flex min-w-0 flex-wrap gap-1.5">
           <span>
             <Stack name="Postgres" />
           </span>
@@ -50,8 +50,8 @@ const Skills = () => {
             <Stack name="Mongodb" />
           </span>
         </dd>
-        <dt>ORM</dt>
-        <dd className="flex gap-2">
+        <dt className="text-rose-pine">ORM</dt>
+        <dd className="flex min-w-0 flex-wrap gap-1.5">
           <span>
             <Stack name="Drizzle" />
           </span>
@@ -62,8 +62,8 @@ const Skills = () => {
             <Stack name="Mongoose" />
           </span>
         </dd>
-        <dt>Infrastructure</dt>
-        <dd className="flex gap-2">
+        <dt className="text-rose-pine">Infrastructure</dt>
+        <dd className="flex min-w-0 flex-wrap gap-1.5">
           <span>
             <Stack name="Docker" />
           </span>
@@ -71,8 +71,8 @@ const Skills = () => {
             <Stack name="Linux" />
           </span>
         </dd>
-        <dt>Tools</dt>
-        <dd className="flex gap-2">
+        <dt className="text-rose-pine">Tools</dt>
+        <dd className="flex min-w-0 flex-wrap gap-1.5">
           <span>
             <Stack name="Github" />
           </span>

@@ -22,7 +22,6 @@
   --color-hover: var(--custom-hover);
 }
 
-
 body {
   background: var(--color-background);
   color: var(--foreground);
