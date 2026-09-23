@@ -3,7 +3,7 @@ const Projects = () => {
     <section className="border-b border-dashed border-border p-3 font-victor-mono sm:p-5">
       <h1 className="p-3 font-geist-pixel text-2xl text-dark-cyan">Projects</h1>
       {/*  -------project one*/}
-      <div className="border-t border-border p-3 text-start hover:bg-hover sm:p-5">
+      <div className="border-t border-border p-3 text-start hover:bg-border sm:p-5">
         <a
           href="https://github.com/kushalktamang/flowstate"
           target="_blank"

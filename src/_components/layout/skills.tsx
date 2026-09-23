@@ -7,7 +7,7 @@ const Skills = () => {
         Skills
       </h1>
       <dl className="grid grid-cols-1 items-baseline gap-y-4 p-3 sm:grid-cols-[max-content_1fr] sm:gap-x-10 sm:gap-y-[1.05rem] sm:p-5">
-        <dt className="text-rose-pine">Languages</dt>
+        <dt className="text-rose-pine border-b border-border sm:border-none">Languages</dt>
         <dd className="flex min-w-0 flex-wrap gap-1.5">
           <span>
             <Stack name="Typescript" />
@@ -16,7 +16,7 @@ const Skills = () => {
             <Stack name="Go" />
           </span>
         </dd>
-        <dt className="text-rose-pine">FrontEnd</dt>
+        <dt className="text-rose-pine border-b border-border sm:border-none">FrontEnd</dt>
         <dd className="flex min-w-0 flex-wrap gap-1.5">
           <span>
             <Stack name="Nextjs" />
@@ -28,7 +28,7 @@ const Skills = () => {
             <Stack name="Framer" />
           </span>
         </dd>
-        <dt className="text-rose-pine">Backend</dt>
+        <dt className="text-rose-pine border-b border-border sm:border-none">Backend</dt>
         <dd className="flex min-w-0 flex-wrap gap-1.5">
           <span>
             <Stack name="Nodejs" />
@@ -40,7 +40,7 @@ const Skills = () => {
             <Stack name="Hono" />
           </span>
         </dd>
-        <dt className="text-rose-pine">Database</dt>
+        <dt className="text-rose-pine border-b border-border sm:border-none">Database</dt>
 
         <dd className="flex min-w-0 flex-wrap gap-1.5">
           <span>
@@ -50,7 +50,7 @@ const Skills = () => {
             <Stack name="Mongodb" />
           </span>
         </dd>
-        <dt className="text-rose-pine">ORM</dt>
+        <dt className="text-rose-pine border-b  border-border sm:border-none">ORM</dt>
         <dd className="flex min-w-0 flex-wrap gap-1.5">
           <span>
             <Stack name="Drizzle" />
@@ -62,7 +62,7 @@ const Skills = () => {
             <Stack name="Mongoose" />
           </span>
         </dd>
-        <dt className="text-rose-pine">Infrastructure</dt>
+        <dt className="text-rose-pine border-b border-border sm:border-none">Infrastructure</dt>
         <dd className="flex min-w-0 flex-wrap gap-1.5">
           <span>
             <Stack name="Docker" />
@@ -71,7 +71,7 @@ const Skills = () => {
             <Stack name="Linux" />
           </span>
         </dd>
-        <dt className="text-rose-pine">Tools</dt>
+        <dt className="text-rose-pine border-b border-border sm:border-none">Tools</dt>
         <dd className="flex min-w-0 flex-wrap gap-1.5">
           <span>
             <Stack name="Github" />

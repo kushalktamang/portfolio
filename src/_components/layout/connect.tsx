@@ -6,7 +6,16 @@ const Connect = () => {
       <h1 className="p-3 font-geist-pixel text-2xl text-dark-cyan">Connect</h1>
       <div className="border-t border-border p-3 text-start sm:p-5">
         <h2 className="text-sm leading-relaxed sm:text-base">
-          Reach me at <strong className="break-all text-rose-pine">kushalktamang@gmail.com</strong>{" "}
+          Reach me at{" "}
+          <strong className="break-all text-rose-pine">
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=kushalktamang@gmail.com"
+              target="_blank"
+              className="hover:text-dark-cyan"
+            >
+              kushalktamang@gmail.com
+            </a>
+          </strong>{" "}
           or connect on social media below.
         </h2>
       </div>
