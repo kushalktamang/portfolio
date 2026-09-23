@@ -65,7 +65,7 @@ const Stack = ({ name }: { name: StackName }) => {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="group mt-1.5 inline-flex max-w-full items-center gap-1.5 whitespace-nowrap border border-dashed border-border p-1 text-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-solid hover:bg-muted hover:bg-border motion-reduce:transition-none motion-reduce:hover:translate-y-0 sm:text-base"
+      className="group mt-1.5 inline-flex max-w-full items-center gap-1.5 whitespace-nowrap p-1 text-sm transition-all duration-200 sm:border sm:border-dashed sm:border-border sm:hover:-translate-y-0.5 sm:hover:border-solid sm:hover:bg-muted sm:hover:bg-border motion-reduce:transition-none sm:motion-reduce:hover:translate-y-0 sm:text-base"
     >
       <Icon
         aria-hidden
