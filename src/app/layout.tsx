@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist_Pixel, Victor_Mono } from "next/font/google";
 import "@/_css/globals.css";
+import { SmoothScroll } from "@/_components/ui/scroll";
 
 const victorMono = Victor_Mono({
   variable: "--font-victor-mono",
@@ -26,7 +27,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       suppressHydrationWarning
       className={`${victorMono.variable} ${geistPixel.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <SmoothScroll>{children}</SmoothScroll>
+      </body>
     </html>
   );
 }

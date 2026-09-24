@@ -10,6 +10,9 @@ const Skills = () => {
         <dt className="text-rose-pine border-b border-border sm:border-none">Languages</dt>
         <dd className="flex min-w-0 flex-wrap gap-1.5">
           <span>
+            <Stack name="Javascript" />
+          </span>
+          <span>
             <Stack name="Typescript" />
           </span>
           <span>
@@ -20,6 +23,9 @@ const Skills = () => {
         <dd className="flex min-w-0 flex-wrap gap-1.5">
           <span>
             <Stack name="Nextjs" />
+          </span>
+          <span>
+            <Stack name="Vite" />
           </span>
           <span>
             <Stack name="Tailwind" />
