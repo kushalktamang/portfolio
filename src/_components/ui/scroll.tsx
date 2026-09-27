@@ -32,8 +32,6 @@ const SmoothScroll = ({ children }: { children: ReactNode }) => {
       options={{
         lerp: 0.1,
         duration: 1.2,
-        smoothWheel: true,
-        syncTouch: false,
       }}
     >
       <ResizeOnLoad />
