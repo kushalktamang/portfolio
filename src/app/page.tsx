@@ -1,10 +1,11 @@
 "use client";
 import { useEffect } from "react";
 import Connect from "@/_components/layout/connect";
-import HeroSection from "@/_components/layout/main-section";
-import Navbar from "@/_components/layout/Navbar";
+import HeroSection from "@/_components/layout/hero";
+import Navbar from "@/_components/layout/navbar";
 import Projects from "@/_components/layout/projects";
 import Skills from "@/_components/layout/skills";
+import About from "@/_components/layout/about";
 
 const Home = () => {
   useEffect(() => {
@@ -34,6 +35,7 @@ const Home = () => {
       {/*className="flex min-h-dvh w-full max-w-2xl flex-col sm:mx-8 "*/}
       <Navbar />
       <HeroSection />
+      <About />
       <Projects />
       <Skills />
       <Connect />

@@ -64,16 +64,19 @@ const Stack = ({ name }: { name: StackName }) => {
 
   return (
     <a
+      // sm:border sm:border-dashed sm:border-border
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="group mt-1.5 inline-flex max-w-full items-center gap-1.5 whitespace-nowrap p-1 text-sm transition-all duration-200 sm:border sm:border-dashed sm:border-border sm:hover:-translate-y-0.5 sm:hover:border-solid sm:hover:bg-muted sm:hover:bg-border motion-reduce:transition-none sm:motion-reduce:hover:translate-y-0 sm:text-base"
+      className="group mt-1.5 inline-flex max-w-full items-center justify-center gap-1.5 whitespace-nowrap p-1 text-sm transition-all duration-200  sm:hover:-translate-y-0.5 sm:hover:border-solid sm:hover:bg-muted sm:hover:bg-border motion-reduce:transition-none sm:motion-reduce:hover:translate-y-0 sm:text-base sm:border sm:border-dashed sm:border-border"
     >
-      <Icon
-        aria-hidden
-        className="size-4 transition-transform duration-200 group-hover:scale-110 group-hover:rotate-6"
-      />
-      {name}
+      <span>
+        <Icon
+          aria-hidden
+          className="size-4 transition-transform duration-200 group-hover:scale-110 group-hover:rotate-6"
+        />
+      </span>
+      <span>{name}</span>
     </a>
   );
 };
