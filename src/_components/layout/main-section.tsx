@@ -1,5 +1,3 @@
-"use client";
-
 import { motion, type Variants } from "framer-motion";
 import { EASE, container, fadeUp } from "@/_lib/motion";
 import Image from "next/image";

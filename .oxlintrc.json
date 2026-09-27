@@ -170,5 +170,5 @@
   },
   // Files/folders oxlint should never lint — build output and dependencies,
   // since linting compiled or third-party code is pointless and slow.
-  "ignorePatterns": ["dist", "build", ".next", "node_modules"]
+  "ignorePatterns": ["dist", "build", ".next", "node_modules", "public/**"]
 }
