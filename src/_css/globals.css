@@ -1,13 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --background: #121212;
+  --background: #0a0a0a;
   --foreground: #f9f6f0;
   --custom-pink: #eb6f92;
   --custom-red: #ea6962;
   --custom-blue: #7daea3;
   --custom-border: #222222;
   --custom-hover: #080808;
+  --custom-black: #0e0d11;
+  --custom-white: #f9f6f0;
 }
 
 @theme inline {
@@ -23,14 +25,21 @@
 }
 
 body {
-  background: var(--color-background);
-  color: var(--foreground);
-  font-family: var(--font-victor-mono);
+  font-family: monospace;
+  color: var(--custom-white);
+  background: var(--custom-black); /* fallback solid color only */
+  position: relative;
 }
 
-@utility no-scrollbar {
-  scrollbar-width: none; /* Firefox */
-  &::-webkit-scrollbar {
-    display: none; /* Safari and Chrome */
-  }
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image:
+    radial-gradient(1200px 600px at 20% 0%, rgba(236, 229, 211, 0.025), transparent 60%),
+    radial-gradient(900px 700px at 90% 30%, rgba(190, 140, 90, 0.018), transparent 70%),
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.93 0 0 0 0 0.90 0 0 0 0 0.83 0 0 0 0.05 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  background-attachment: fixed; /* fine now, it's not repainting content */
+  will-change: transform; /* nudges it onto its own GPU layer */
 }
