@@ -80,6 +80,10 @@ body {
   position: relative;
 }
 
+i {
+  color: var(--custom-blue);
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
