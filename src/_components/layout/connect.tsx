@@ -15,19 +15,19 @@ const Connect = () => {
       viewport={{ once: true, amount: 0.2 }}
       className="mb-0 font-victor-mono sm:mb-7"
     >
-      <motion.h1 variants={fadeUp} className="font-geist-pixel text-2xl text-dark-cyan">
+      <motion.h1 variants={fadeUp} className="text-2xl text-dark-cyan">
         <Header title="Contact" />
       </motion.h1>
       <Shell>
         <motion.div variants={fadeUp} className="p-3 text-start sm:p-5">
-          <h2 className="text-sm leading-relaxed sm:text-base">
+          <h2 className="text-sm leading-relaxed sm:text-base font-arimo text-center">
             Reach me at{" "}
             <strong className="break-all text-rose-pine">
               <a
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=kushalktamang@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="transition-colors duration-200 hover:text-dark-cyan"
+                className="transition-colors duration-200 hover:text-dark-cyan font-victor-mono"
               >
                 kushalktamang@gmail.com
               </a>
@@ -37,7 +37,7 @@ const Connect = () => {
         </motion.div>
 
         {/*------------links social---------------*/}
-        <div className="flex flex-wrap items-center justify-center border border-border m-5">
+        <div className="flex flex-wrap items-center justify-center border border-border mx-5 mb-4">
           {/*----------------linkedin-------------------------*/}
           <motion.div variants={fadeUp} className="min-w-25 flex-1">
             <a

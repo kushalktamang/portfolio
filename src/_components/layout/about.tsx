@@ -8,7 +8,7 @@ const About = () => {
     <>
       <Header title="About" />
       <Shell>
-        <div className="flex h-full max-h-125 flex-1 flex-col justify-between gap-5 p-3 text-2xl leading-relaxed sm:gap-3 sm:p-5 sm:text-base font-aniamie text-[#63636b]">
+        <div className="flex h-full max-h-125 flex-1 flex-col justify-between gap-5 p-3 text-2xl leading-relaxed sm:gap-3 sm:p-5 sm:text-base font-arimo text-[#63636b]">
           <motion.div
             variants={fadeUp}
             className="flex gap-2 text-[14.5px] leading-relaxed text-muted"

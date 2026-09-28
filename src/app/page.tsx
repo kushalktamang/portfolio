@@ -7,6 +7,7 @@ import Projects from "@/_components/layout/projects";
 import Skills from "@/_components/layout/skills";
 import About from "@/_components/layout/about";
 import { Preloader } from "@/_components/layout/pre-loader";
+import GithubActivity from "@/_components/layout/github-activity";
 
 const Home = () => {
   const [preloaderDone, setPreloaderDone] = useState(false);
@@ -35,6 +36,7 @@ const Home = () => {
       <Navbar />
       <HeroSection />
       <About />
+      <GithubActivity />
       <Projects />
       <Skills />
       <Connect />

@@ -18,7 +18,7 @@ const Skills = () => {
         <Header title="Skills" />
       </motion.h1>
       <Shell>
-        <dl className="grid grid-cols-1 items-baseline gap-y-4 p-3 sm:grid-cols-[max-content_1fr] sm:gap-x-10 sm:gap-y-[1.05rem] sm:p-5 font-victor-mono">
+        <dl className="grid grid-cols-1 items-baseline gap-y-4 p-3 sm:grid-cols-[max-content_1fr] sm:gap-x-10 sm:gap-y-[1.05rem] sm:p-5 font-arimo">
           <motion.dt
             variants={fadeUp}
             className="text-rose-pine border-b border-border sm:border-none"

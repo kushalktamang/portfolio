@@ -64,11 +64,11 @@ const Stack = ({ name }: { name: StackName }) => {
 
   return (
     <a
-      // sm:border sm:border-dashed sm:border-border
+      // sm:border sm:border-dashed sm:border-border sm:hover:bg-muted sm:hover:bg-border
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="group mt-1.5 inline-flex max-w-full items-center justify-center gap-1.5 whitespace-nowrap p-1 text-sm transition-all duration-200  sm:hover:-translate-y-0.5 sm:hover:border-solid sm:hover:bg-muted sm:hover:bg-border motion-reduce:transition-none sm:motion-reduce:hover:translate-y-0 sm:text-base sm:border sm:border-dashed sm:border-border"
+      className="group mt-1.5 inline-flex max-w-full items-center justify-center gap-1.5 whitespace-nowrap p-1 text-sm transition-all duration-200  sm:hover:-translate-y-0.5 sm:hover:border-solid  motion-reduce:transition-none sm:motion-reduce:hover:translate-y-0 sm:text-base font-victor-mono"
     >
       <span>
         <Icon

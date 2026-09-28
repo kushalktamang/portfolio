@@ -79,12 +79,7 @@ export function Preloader({ onComplete }: PreloaderProps) {
                 keySplines=".33,.66,.66,1;.33,0,.66,.33"
               />
             </circle>
-            <circle
-              cx="20"
-              cy="12"
-              r="3"
-              style={{ fill: "var(--custom-pink)" }}
-            >
+            <circle cx="20" cy="12" r="3" style={{ fill: "var(--custom-pink)" }}>
               <animate
                 id="spinner_OcgL"
                 begin="spinner_qFRN.begin+0.2s"
