@@ -8,7 +8,36 @@ import Skills from "@/_components/layout/skills";
 import About from "@/_components/layout/about";
 import { Preloader } from "@/_components/layout/pre-loader";
 import GithubActivity from "@/_components/layout/github-activity";
-import ScrollToTop from "@/_components/ui/scroll-to-top";
+import { usePathname } from "next/navigation";
+
+const ScrollToTop = () => {
+  const pathname = usePathname();
+
+  useEffect(() => {
+    const scroll = () => {
+      const hash = window.location.hash;
+
+      if (hash !== null) {
+        const element = document.getElementById(hash.slice(1));
+        if (element !== null) {
+          setTimeout(() => {
+            element.scrollIntoView({ behavior: "smooth" });
+          }, 100);
+          return;
+        }
+      }
+
+      window.scrollTo(0, 0);
+    };
+
+    scroll();
+
+    window.addEventListener("hashchange", scroll);
+    return () => window.removeEventListener("hashchange", scroll);
+  }, [pathname]);
+
+  return null;
+};
 
 const Home = () => {
   const [preloaderDone, setPreloaderDone] = useState(false);
