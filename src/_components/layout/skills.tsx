@@ -18,10 +18,10 @@ const Skills = () => {
         <Header title="Skills" />
       </motion.h1>
       <Shell>
-        <dl className="grid grid-cols-1 items-baseline gap-y-4 p-3 sm:grid-cols-[max-content_1fr] sm:gap-x-10 sm:gap-y-[1.05rem] sm:p-5 font-arimo">
+        <dl className="grid grid-cols-1 items-baseline gap-y-4 p-3 sm:grid-cols-[max-content_1fr] sm:gap-x-10 sm:gap-y-[1.05rem] sm:p-5 font-instrument-serif text-xl">
           <motion.dt
             variants={fadeUp}
-            className="text-rose-pine border-b border-border sm:border-none"
+            className="text-foreground border-b border-border sm:border-none"
           >
             Languages
           </motion.dt>
@@ -39,7 +39,7 @@ const Skills = () => {
 
           <motion.dt
             variants={fadeUp}
-            className="text-rose-pine border-b border-border sm:border-none"
+            className="text-foreground border-b border-border sm:border-none"
           >
             FrontEnd
           </motion.dt>
@@ -60,7 +60,7 @@ const Skills = () => {
 
           <motion.dt
             variants={fadeUp}
-            className="text-rose-pine border-b border-border sm:border-none"
+            className="text-foreground border-b border-border sm:border-none"
           >
             Backend
           </motion.dt>
@@ -78,7 +78,7 @@ const Skills = () => {
 
           <motion.dt
             variants={fadeUp}
-            className="text-rose-pine border-b border-border sm:border-none"
+            className="text-foreground border-b border-border sm:border-none"
           >
             Database
           </motion.dt>
@@ -89,11 +89,14 @@ const Skills = () => {
             <span>
               <Stack name="Mongodb" />
             </span>
+            <span>
+              <Stack name="Neon" />
+            </span>
           </motion.dd>
 
           <motion.dt
             variants={fadeUp}
-            className="text-rose-pine border-b border-border sm:border-none"
+            className="text-foreground border-b border-border sm:border-none"
           >
             ORM
           </motion.dt>
@@ -111,7 +114,7 @@ const Skills = () => {
 
           <motion.dt
             variants={fadeUp}
-            className="text-rose-pine border-b border-border sm:border-none"
+            className="text-foreground border-b border-border sm:border-none"
           >
             Infrastructure
           </motion.dt>
@@ -126,7 +129,7 @@ const Skills = () => {
 
           <motion.dt
             variants={fadeUp}
-            className="text-rose-pine border-b border-border sm:border-none"
+            className="text-foreground border-b border-border sm:border-none"
           >
             Tools
           </motion.dt>
@@ -139,9 +142,6 @@ const Skills = () => {
             </span>
             <span>
               <Stack name="Bruno" />
-            </span>
-            <span>
-              <Stack name="Neon" />
             </span>
           </motion.dd>
         </dl>

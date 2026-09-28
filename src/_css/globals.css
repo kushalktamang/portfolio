@@ -3,13 +3,16 @@
 :root {
   --background: #0a0a0a;
   --foreground: #f5f5f4;
+
   --custom-pink: #eb6f92;
   --custom-red: #ea6962;
   --custom-blue: #7daea3;
+
   --custom-border: #222222;
-  /*--custom-hover: #080808;*/
   --custom-black: #0e0d11;
   --custom-white: #f9f6f0;
+  --custom-gray: #63626b;
+
   --custom-line: rgba(255, 255, 255, 0.1);
   --custom-stripe: rgba(255, 255, 255, 0.055);
   --custom-hover: rgba(255, 255, 255, 0.05);
@@ -18,11 +21,11 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
   --font-arimo: var(--font-arimo);
-  --font-victor-mono: var(--font-victor-mono);
-  --font-aniamie: var(--custom-font);
   --font-geist-pixel: var(--font-geist-pixel);
   --font-instrument-serif: var(--font-instrument-serif);
+
   --color-rose-pine: var(--custom-pink);
   --color-dark-cyan: var(--custom-blue);
   --color-coral-red: var(--custom-red);
@@ -30,44 +33,94 @@
   --color-hover: var(--custom-hover);
   --color-line: var(--custom-line);
   --color-stripe: var(--custom-stripe);
+  --color-soft: var(--custom-gray);
 }
 
-/* Smooth transitions for theme color variables */
-body,
-header,
-main,
-div,
-span,
-p,
-h1,
-h2,
-h3,
-a,
-button,
-input {
-  transition-property: color, background-color, border-color;
-  transition-duration: 250ms;
-  transition-timing-function: ease-in-out;
+@layer base {
+  * {
+    border-color: var(--custom-line);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  body {
+    font-family: monospace;
+    color: var(--custom-white);
+    background: var(--background);
+    position: relative;
+    transition:
+      color 250ms ease-in-out,
+      background-color 250ms ease-in-out;
+  }
+  a,
+  button,
+  input {
+    transition:
+      color 250ms ease-in-out,
+      background-color 250ms ease-in-out,
+      border-color 250ms ease-in-out;
+  }
+
+  mark {
+    background-color: var(--custom-blue);
+    color: var(--custom-white);
+    padding: 0 1rem 0 1rem;
+    font-family: monospace;
+  }
 }
 
-* {
-  border-color: var(--custom-line);
+@layer components {
+  /* RGB Chromatic Aberration Text Shadow */
+  .text-glitch {
+    text-shadow:
+      -1.5px 0 0 rgba(0, 200, 255, 0.6),
+      1.5px 0 0 rgba(255, 80, 0, 0.6);
+  }
+
+  .bg-stripes {
+    background-image: repeating-linear-gradient(
+      45deg,
+      var(--custom-stripe) 0,
+      var(--custom-stripe) 1px,
+      transparent 1px,
+      transparent 6px
+    );
+  }
 }
 
-html {
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-}
+@layer utilities {
+  /* CRT Scanline Animation keyframes */
+  @keyframes scanline {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
 
-body {
-  font-family: monospace;
-  color: var(--custom-white);
-  background: var(--background);
-  position: relative;
-}
+  .animate-scanline {
+    animation: scanline 8s linear infinite;
+  }
 
-i {
-  color: var(--custom-blue);
+  /* Tonearm pivot transition */
+  .tonearm-transition {
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-origin: top right;
+  }
+
+  /* Hide scrollbar visually without disabling scroll */
+  .hide-scrollbar {
+    -ms-overflow-style: none; /* IE */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
+  }
 }
 
 /* Custom Scrollbar */
@@ -76,44 +129,12 @@ i {
   height: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--bg);
+  background: var(--background);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--line);
+  background: var(--custom-line);
   border-radius: 999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--soft);
-}
-
-/* RGB Chromatic Aberration Text Shadow */
-.text-glitch {
-  text-shadow:
-    -1.5px 0 0 rgba(0, 200, 255, 0.6),
-    1.5px 0 0 rgba(255, 80, 0, 0.6);
-}
-
-.bg-stripes {
-  background-image: repeating-linear-gradient(
-    45deg,
-    var(--custom-stripe) 0,
-    var(--custom-stripe) 1px,
-    transparent 1px,
-    transparent 6px
-  );
-}
-
-/* Tonearm pivot transition */
-.tonearm-transition {
-  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-  transform-origin: top right;
-}
-
-/* Hide scrollbar visually without disabling scroll */
-.hide-scrollbar::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Edge */
-}
-.hide-scrollbar {
-  -ms-overflow-style: none; /* IE */
-  scrollbar-width: none; /* Firefox */
+  background: var(--custom-hover);
 }

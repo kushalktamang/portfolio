@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Header from "../ui/header";
 import Shell from "../ui/shell";
 import { motion } from "framer-motion";
-import { BsArrowRight, BsGithub } from "react-icons/bs";
+import { BsGithub } from "react-icons/bs";
 
 const WEEKS = 53;
 const DAYS = 7;
@@ -67,7 +67,9 @@ const GithubActivity = () => {
 
     fetch(
       `https://github-contributions-api.jogruber.de/v4/${username}?y=last`,
-      { signal: controller.signal },
+      {
+        signal: controller.signal,
+      },
     )
       .then((res) => {
         if (!res.ok) {
@@ -125,7 +127,7 @@ const GithubActivity = () => {
 
   return (
     <section>
-      <Header id="github" title="Github Activity" aside="@kushalktamang" />
+      <Header id="github" title="Github Activity" />
 
       <Shell>
         <div className="p-6 backdrop-blur-md">
@@ -134,34 +136,38 @@ const GithubActivity = () => {
               href={profile}
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center gap-2 text-sm font-medium text-neutral-200 transition-colors hover:text-white"
+              className="group inline-flex items-center gap-2 text-sm font-medium transition-colors hover:text-white font-arimo text-soft"
             >
               <BsGithub className="h-4 w-4" />@{username}
-              <BsArrowRight className="opacity-0 transition-opacity group-hover:opacity-100" />
             </a>
-            <span className="font-mono text-xs text-neutral-400 flex items-center gap-2">
+            <span className="flex items-center gap-2 text-right font-mono text-[10px] text-neutral-400 sm:text-xs">
               {loading && (
-                <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-400"></span>
+                <span className="relative flex h-2 w-2 shrink-0">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
+                  <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
                 </span>
               )}
+
               {hasError && (
                 <span
-                  className="h-2 w-2 rounded-full bg-amber-500/80 cursor-help"
+                  className="h-2 w-2 shrink-0 cursor-help rounded-full bg-amber-500/80"
                   title="Failed to load live data, showing demo data"
                 />
               )}
-              {contributionsCount} contributions in the last year
+
+              <span className="whitespace-nowrap text-soft">
+                {contributionsCount} contributions
+                <span className="hidden sm:inline"> in the last year</span>
+              </span>
             </span>
           </div>
 
           <div
-            className={`overflow-x-auto pb-1 transition-opacity duration-300 ${loading ? "opacity-60" : "opacity-100"}`}
+            className={`w-full pb-1 transition-opacity duration-300 ${loading ? "opacity-60" : "opacity-100"}`}
           >
-            <div className="flex gap-0.75">
+            <div className="grid w-full grid-cols-53 gap-0.75">
               {weeks.map((week, w) => (
-                <div key={w} className="flex flex-col gap-0.75">
+                <div key={w} className="grid min-w-0 grid-rows-7 gap-0.75">
                   {week.map((day, d) => (
                     <motion.span
                       key={day.date}
@@ -172,7 +178,7 @@ const GithubActivity = () => {
                         delay: (w * DAYS + d) * 0.001,
                         duration: 0.15,
                       }}
-                      className={`h-2.75 w-2.75 flex-none rounded-xs transition-colors duration-300 ${SHADES[day.level]}`}
+                      className={`aspect-square w-full min-w-0 rounded-xs transition-colors duration-300 ${SHADES[day.level]}`}
                       title={
                         day.date.startsWith("fallback")
                           ? loading

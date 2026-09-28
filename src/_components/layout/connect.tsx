@@ -20,7 +20,7 @@ const Connect = () => {
       </motion.h1>
       <Shell>
         <motion.div variants={fadeUp} className="p-3 text-start sm:p-5">
-          <h2 className="text-sm leading-relaxed sm:text-base font-arimo text-center">
+          <h2 className="text-sm leading-relaxed sm:text-base font-arimo text-center text-soft">
             Reach me at{" "}
             <strong className="break-all text-rose-pine">
               <a

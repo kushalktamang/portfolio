@@ -8,6 +8,7 @@ import Skills from "@/_components/layout/skills";
 import About from "@/_components/layout/about";
 import { Preloader } from "@/_components/layout/pre-loader";
 import GithubActivity from "@/_components/layout/github-activity";
+import ScrollToTop from "@/_components/ui/scroll-to-top";
 
 const Home = () => {
   const [preloaderDone, setPreloaderDone] = useState(false);
@@ -30,9 +31,8 @@ const Home = () => {
 
   return (
     <>
-      {/*className="flex min-h-dvh justify-center overflow-x-hidden px-0 sm:px-4 sm:py-7"*/}
-      {/*className="flex min-h-dvh w-full max-w-2xl flex-col sm:mx-8 "*/}
       <Preloader onComplete={() => setPreloaderDone(true)} />
+      <ScrollToTop />
       <Navbar />
       <HeroSection />
       <About />
