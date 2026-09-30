@@ -43,7 +43,7 @@
 
   html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    overflow-x: clip;
   }
 
   body {
@@ -51,6 +51,7 @@
     color: var(--custom-white);
     background: var(--background);
     position: relative;
+    overflow-x: clip;
     transition:
       color 250ms ease-in-out,
       background-color 250ms ease-in-out;

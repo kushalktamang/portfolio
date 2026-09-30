@@ -14,18 +14,19 @@ const Skills = () => {
       whileInView="show"
       viewport={{ once: true, amount: 0.15 }}
     >
-      <motion.h1 variants={fadeUp} className="font-geist-pixel text-2xl text-dark-cyan">
+      <motion.h1
+        variants={fadeUp}
+        className="font-geist-pixel text-2xl text-dark-cyan"
+      >
         <Header title="Skills" />
       </motion.h1>
       <Shell>
         <dl className="grid grid-cols-1 items-baseline gap-y-4 p-3 sm:grid-cols-[max-content_1fr] sm:gap-x-10 sm:gap-y-[1.05rem] sm:p-5 font-instrument-serif text-xl">
-          <motion.dt
+          <motion.dt variants={fadeUp}>Languages</motion.dt>
+          <motion.dd
             variants={fadeUp}
-            className="text-foreground border-b border-border sm:border-none"
+            className="flex min-w-0 flex-wrap gap-1.5"
           >
-            Languages
-          </motion.dt>
-          <motion.dd variants={fadeUp} className="flex min-w-0 flex-wrap gap-1.5">
             <span>
               <Stack name="Javascript" />
             </span>
@@ -37,13 +38,13 @@ const Skills = () => {
             </span>
           </motion.dd>
 
-          <motion.dt
-            variants={fadeUp}
-            className="text-foreground border-b border-border sm:border-none"
-          >
+          <motion.dt variants={fadeUp} className="text-foreground">
             FrontEnd
           </motion.dt>
-          <motion.dd variants={fadeUp} className="flex min-w-0 flex-wrap gap-1.5">
+          <motion.dd
+            variants={fadeUp}
+            className="flex min-w-0 flex-wrap gap-1.5"
+          >
             <span>
               <Stack name="Nextjs" />
             </span>
@@ -58,13 +59,11 @@ const Skills = () => {
             </span>
           </motion.dd>
 
-          <motion.dt
+          <motion.dt variants={fadeUp}>Backend</motion.dt>
+          <motion.dd
             variants={fadeUp}
-            className="text-foreground border-b border-border sm:border-none"
+            className="flex min-w-0 flex-wrap gap-1.5"
           >
-            Backend
-          </motion.dt>
-          <motion.dd variants={fadeUp} className="flex min-w-0 flex-wrap gap-1.5">
             <span>
               <Stack name="Nodejs" />
             </span>
@@ -76,13 +75,11 @@ const Skills = () => {
             </span>
           </motion.dd>
 
-          <motion.dt
+          <motion.dt variants={fadeUp}>Database</motion.dt>
+          <motion.dd
             variants={fadeUp}
-            className="text-foreground border-b border-border sm:border-none"
+            className="flex min-w-0 flex-wrap gap-1.5"
           >
-            Database
-          </motion.dt>
-          <motion.dd variants={fadeUp} className="flex min-w-0 flex-wrap gap-1.5">
             <span>
               <Stack name="Postgres" />
             </span>
@@ -94,13 +91,11 @@ const Skills = () => {
             </span>
           </motion.dd>
 
-          <motion.dt
+          <motion.dt variants={fadeUp}>ORM</motion.dt>
+          <motion.dd
             variants={fadeUp}
-            className="text-foreground border-b border-border sm:border-none"
+            className="flex min-w-0 flex-wrap gap-1.5"
           >
-            ORM
-          </motion.dt>
-          <motion.dd variants={fadeUp} className="flex min-w-0 flex-wrap gap-1.5">
             <span>
               <Stack name="Drizzle" />
             </span>
@@ -112,13 +107,11 @@ const Skills = () => {
             </span>
           </motion.dd>
 
-          <motion.dt
+          <motion.dt variants={fadeUp}>Infrastructure</motion.dt>
+          <motion.dd
             variants={fadeUp}
-            className="text-foreground border-b border-border sm:border-none"
+            className="flex min-w-0 flex-wrap gap-1.5"
           >
-            Infrastructure
-          </motion.dt>
-          <motion.dd variants={fadeUp} className="flex min-w-0 flex-wrap gap-1.5">
             <span>
               <Stack name="Docker" />
             </span>
@@ -127,13 +120,11 @@ const Skills = () => {
             </span>
           </motion.dd>
 
-          <motion.dt
+          <motion.dt variants={fadeUp}>Tools</motion.dt>
+          <motion.dd
             variants={fadeUp}
-            className="text-foreground border-b border-border sm:border-none"
+            className="flex min-w-0 flex-wrap gap-1.5"
           >
-            Tools
-          </motion.dt>
-          <motion.dd variants={fadeUp} className="flex min-w-0 flex-wrap gap-1.5">
             <span>
               <Stack name="Github" />
             </span>

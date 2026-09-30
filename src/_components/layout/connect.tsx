@@ -39,7 +39,7 @@ const Connect = () => {
         {/*------------links social---------------*/}
         <div className="flex flex-wrap items-center justify-center border border-border mx-5 mb-4">
           {/*----------------linkedin-------------------------*/}
-          <motion.div variants={fadeUp} className="min-w-25 flex-1">
+          <motion.div variants={fadeUp} className="min-w-0 flex-1">
             <a
               href="https://www.linkedin.com/in/kushalktamang/"
               rel="noopener noreferrer"
@@ -53,7 +53,7 @@ const Connect = () => {
             </a>
           </motion.div>
           {/*------------------------x------------------------*/}
-          <motion.div variants={fadeUp} className="min-w-25 flex-1">
+          <motion.div variants={fadeUp} className="min-w-0 flex-1">
             <a
               href="https://x.com/kushalktamang"
               rel="noopener noreferrer"
@@ -67,7 +67,7 @@ const Connect = () => {
             </a>
           </motion.div>
           {/*-----------------github----------------*/}
-          <motion.div variants={fadeUp} className="min-w-25 flex-1">
+          <motion.div variants={fadeUp} className="min-w-0 flex-1">
             <a
               href="https://github.com/kushalktamang"
               rel="noopener noreferrer"

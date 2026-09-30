@@ -22,7 +22,7 @@ const Projects = () => {
         {/*  -------project one*/}
         <motion.div
           variants={fadeUp}
-          className="text-start transition-colors duration-300 hover:bg-hover sm:p-5"
+          className="text-start transition-colors duration-300 hover:bg-hover p-5 sm:p-5"
         >
           <a
             href="https://github.com/kushalktamang/flowstate"
