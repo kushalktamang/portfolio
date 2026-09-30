@@ -12,7 +12,7 @@ const Projects = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.2 }}
-      className="font-victor-mono"
+      className="font-arimo"
     >
       <motion.h1 variants={fadeUp}>
         <Header title="Projects" />

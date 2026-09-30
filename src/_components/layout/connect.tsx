@@ -19,15 +19,15 @@ const Connect = () => {
         <Header title="Contact" />
       </motion.h1>
       <Shell>
-        <motion.div variants={fadeUp} className="p-3 text-start sm:p-5">
-          <h2 className="text-sm leading-relaxed sm:text-base font-arimo text-center text-soft">
+        <motion.div variants={fadeUp} className="p-3 sm:p-5">
+          <h2 className="text-sm leading-relaxed sm:text-xl font-arimo text-center text-soft">
             Reach me at{" "}
-            <strong className="break-all text-rose-pine">
+            <strong className="break-all">
               <a
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=kushalktamang@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="transition-colors duration-200 hover:text-dark-cyan font-victor-mono"
+                className="transition-colors duration-200 font-instrument-serif"
               >
                 kushalktamang@gmail.com
               </a>
